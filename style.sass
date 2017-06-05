@@ -1,0 +1,48 @@
+//Fonts
+@import "https://fonts.googleapis.com/css?family=Montserrat:800"
+
+//Colors
+$white: #FFF
+$light-gray: #FAFAFA
+
+//General HTML tags
+body
+  margin: 1em
+  padding: 0.6em
+  @media (min-width: 40rem)
+    padding: 2.5em
+  
+//Container
+.container
+  width: 100%
+  position: relative
+  margin: 0 auto
+  max-width: 1300px
+  
+.container video
+  width: 100%
+  
+//Mask
+svg
+  width: 100%
+  position: absolute
+  top: 0 
+  left: 0 
+  height: 100%
+  
+svg text
+  font-family: 'Montserrat', sans-serif
+  text-transform: uppercase
+  font-weight: 800
+  font-size: 25px
+  
+svg rect 
+  fill: $white
+  
+svg > rect 
+  -webkit-mask: url ('#mask')
+  mask: url('#mask')
+  
+  
+  
+  
